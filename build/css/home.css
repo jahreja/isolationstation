@@ -36,12 +36,14 @@
 
 #fullEx {
     font-family: "termina", sans-serif;
+    transition: 0.3s all ease;
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
 }
 
 #lounge {
     padding: 0.5em 1em 0.5em 1em;
     font-size: 1.5em;
-    border: 0.1em solid #f3f3f3;
+    border: 0.2em solid #f3f3f3;
     border-radius: 5%;
     color: #f3f3f3;
     cursor: pointer;
@@ -55,7 +57,7 @@
 #lounge:hover {
     color:#181818;
     background: #f3f3f3;
-    border: 0.1em solid #181818;
+    border: 0.2em solid #181818;
 }
 
 
@@ -67,11 +69,11 @@
 }
 
 
-/* trans */
+/* transition */
 
 @keyframes slideInFromBottom {
     0% {
-      transform: translateY(90%);
+      transform: translateY(100%);
       opacity: 0;
     }
     100% {
